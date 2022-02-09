@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Open+Sans&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    border-style: solid;
+    border-color: white;
+    border-width: 2px;
+}
+
+body {
+    font-family: 'Dancing Script', cursive;
+    font-size: 32px;
+    background-image: url(images/background.jpg);
+    color:white;
+    display: flex;
+    align-items:center;
+    justify-content:space-around
+}
+
+.heading {
+    background-color: black;
+    width: 100%;
+    padding: 10px 0px;
+    margin: 20px;
+    display:flex;
+    align-items:center;
+    justify-content:center
+}
+
+.ampersand {
+    max-width: 75px;
+}
+
+.books {
+    max-width: 150px;
+    padding: 10px 10px;
+}
+
+h1 {
+    font-family: Helvetica, sans-serif;
+    padding: 10px 10px;
+    color:crimson;
+
+ 
+}
+.container{
+    max-width: 1000px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container div{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    padding: 50px;
+}
+
+.openBook {
+    /* max-width: 150px; */
+}
+
+@media all and (max-width: 1000px) {
+    .flexBox .container{
+      flex-direction: column;
+      justify-content: space-evenly;
+    }
+}
+
+@media all and (max-width: 500px) {
+    .flexBox .container{
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      justify-items: center;
+    }
+    .container div{
+        padding: 10px;
+    }
+}
